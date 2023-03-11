@@ -62,6 +62,11 @@ generate:
 	go get github.com/google/wire/cmd/wire@latest
 	go generate ./...
 
+
+.PHONY: run
+run:
+	kratos run
+
 .PHONY: all
 # generate all
 all:

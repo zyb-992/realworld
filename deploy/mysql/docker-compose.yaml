@@ -2,6 +2,8 @@ version: '3'
 services:
   rwdb:
     image: mysql:8
-    hostname: user-db
+    hostname: realworld
     environment:
       MYSQL_ROOT_PASSWORD: dangerous
+    ports:
+      - "3306:3306"
